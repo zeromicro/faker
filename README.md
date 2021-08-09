@@ -32,7 +32,7 @@ package types
 
 type Fake struct{
 	Id int64 `json:"id" fake:"randId"`
-	Name string `json:"name" fake:"randName(persion,cn)"`
+	Name string `json:"name" fake:"randName(person,cn)"`
 	Mobile string `json:"mobile" fake:"mobile"`
 	Gender string `json:"gender" fake:"enum[男,女]"`
 	Hobby []string `json:"hobby" fake:"arr(3,randStr)"`
